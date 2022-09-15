@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Oswald&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+
+/*--- header ------------------------------------ */
+.logo{
+    font-family:"oswald", san-serif;
+    text-transform:uppercase;
+    font-size:280%;
+    float:left;
+    color:#555;
+    
+}
+
+h2{
+    font-family:"oswald", san-serif;;
+    color:#777777;
+}
+
+
+#menu {
+    float: right;
+    font-size: 130%;
+    
+    
+ }
+
+ #menu li{
+    float:left;
+    margin-right:30px;
+    list-style-type:none;
+    
+    
+ }
+
+ #menu a{
+    text-decoration:none;
+    color:#777;
+    
+ }
+
+ #menu a:hover{
+    border-bottom: 1px solid #777;
+    font-weight:bold;
+ }
+
+ #menu li .active{
+    border-bottom: 1px solid #777;
+ }
+
+ #menu, .logo{
+    line-height:75px;
+ }
+ 
+ h2 i{
+    padding-left:20px;
+    padding-right:10px;
+ }
+
+ nav{
+    border-top: 1px solid gray
+ }
+/*--- header ------------------------------------ */
+/*--- body ------------------------------------ */
+body{
+    font-family:lato;
+    font-size:normal
+}
+
+.hero-image{
+    width:100%;
+    height:750px;
+    background-color:rgba(0,0,0,0.7);
+    background: url("https://cdn.pixabay.com/photo/2017/08/07/14/02/man-2604149_960_720.jpg") center center no-repeat;
+    background-size: cover;
+    overflow:hidden;
+    
+}
+
+.row{
+    display:flex;
+}
+
+.column{
+    flex:50%;
+    height:300px;
+    padding:10px;
+    text-align:center;
+}
+
+
+.pix{
+    width:100%;
+    height:500px;
+    padding-left: 150px;
+}
+div .pix{
+    margin-top:-300px;
+}
+
+.column h1{
+    font-size:50px;
+    font-weight:400px;
+    padding-bottom:3px;
+    padding-top:-200px;
+
+}
+.column h2{
+    font-size:30px;
+    font-weight:100px;
+    padding-bottom:5px;
+    
+
+}
+
+div .col2{
+    margin-top:-200px;
+    margin-right: 200px;
+    padding-left:30px;
+    padding-right:30px;
+}
+div .col2 p{
+    text-align: justify;
+}
+
+.list2 li{
+    text-align:justify;
+    font-size:14px;
+    text-transform:uppercase;
+    list-style-type: none;
+    
+    
+}
+.list2{
+    padding-top: 10px;
+   
+}
+
+.list2 li h3{
+    font-weight:200px;
+    line-height:20px;
+
+}
+.list2 li h3 i{
+   padding-right:5px;
+
+}
+.row22 h3{
+    text-align:center;
+}
+.row2{
+    display:flex;
+}
+ .column2{
+    flex:33%;
+    height:300px;
+    padding:10px;
+    
+
+}
+
+
+
+/*--- body ------------------------------------ */
+/*--- footer ------------------------------------ */
+
+
+
+
+/*--- footer ------------------------------------ */
