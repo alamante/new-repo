@@ -3,6 +3,7 @@
 *{
     margin:0;
     padding:0;
+    box-sizing:border-box;
 }
 
 /*--- header ------------------------------------ */
@@ -60,10 +61,10 @@ h2{
     padding-right:10px;
  }
 
- nav{
+ #menu nav{
     border-top: 1px solid gray
  }
-/*--- header ------------------------------------ */
+/*--- End of header ------------------------------------ */
 /*--- body ------------------------------------ */
 body{
     font-family:lato;
@@ -94,11 +95,10 @@ body{
 
 .pix{
     width:100%;
-    height:500px;
-    padding-left: 150px;
-}
+    height:auto;}
+
 div .pix{
-    margin-top:-300px;
+    margin-top: -300px;
 }
 
 .column h1{
@@ -148,26 +148,434 @@ div .col2 p{
    padding-right:5px;
 
 }
+
+.ourclasses{
+    text-align:center;
+}
 .row22 h3{
     text-align:center;
 }
 .row2{
     display:flex;
+    margin-bottom:60px;
 }
  .column2{
     flex:33%;
     height:300px;
     padding:10px;
     
+}
+.column2 img{
+    width:100%;
+    height:auto;
+    
+    
+}
+
+/*------- Table ---------------------*/
+
+.tabsec h2{
+    text-transform:uppercase;
+    font-weight:800px;
+    text-align:center;
+    padding-bottom:20px;
+    font-size:40px;
+    color:black; 
+}
+.tabsec .spancla2{
+    text-transform:uppercase;
+    font-weight:800px;
+    text-align:center;
+    font-size:15px;
+    color:red;
+
+}
+.tabsec{
+    margin-top:100px;
+    text-align:center;
+}
+
+.spancla{
+    color:red;
+}
+
+ th{
+    background-color:blue;
+    color:white;
+ }
+
+ table {
+   width:80%;  
+   text-align:center;
+  
+}
+.tabsec table{
+   margin-right:auto;
+   margin-left:auto;
+   background-color:#fff;
+   border-collapse: collapse;
+   border-bottom: 2px solid #f8f9fd;
+}
+
+table,th,td{
+    border:1px;
+    height:100px;
+    border-bottom: 2px solid #f8f9fd;
+    vertical-align: middle;
+
+}
+
+.frw{
+    background-color:red;
+    color:#fff
+}
+
+.colgray{
+    background-color:lightgray;
+    opacity:0.9;
+}
+
+.colgray2{
+    background-color:lightgray;
+    opacity:0.9;
+}
+    
+
+
+
+/*------- End of Table ---------------------*/
+
+/*------- trainers ---------------------*/
+
+.spancla3{
+    text-align:center;
+    color:red;
+    text-transform:uppercase;
+}
+.pt{
+    text-align:center;
+    color:black;
+    font-size: 30px;
+    text-transform:uppercase;
+    font-weight:800px;
+}
+
+.pt span{
+    color:red;
+    font-size: 30px;
+}
+.ptsec{
+    margin-top:100px;
+    margin-bottom:180px;
+    text-align:center;
+    
+}
+
+
+.row-p-t{
+    display:flex;
+    margin-right:auto;
+    margin-left:auto;
+}
+.col-p-t{
+    flex:33%;
+    height:300px;
+    padding-right:20px;
+    padding-left:80px;
+    padding-top:20px;
+}
+
+.pt2{
+    height:417px;
+}
+
+.pt1, .pt3{
+    width:500px;
+    height:417px;
+}
+
+/*------- End of Trainers ---------------------*/
+
+/*------- Join section---------------------*/
+#join{
+    background-color: red;
+    margin-bottom:5px;
+    
+}
+.joinus{
+    background-image: url("https://img.freepik.com/free-photo/handsome-shirtless-man-with-stylish-hair-muscular-ectomorph-body-doing-exercises-with-dumbbells-dark-textured-background_613910-18438.jpg?w=1060&t=st=1663448739~exp=1663449339~hmac=49dd72c5f9d70b780c78db16017191fbf557da31dc010e78dd7d214ecb2ad758" );
+    background-position: center center;
+    background-size: cover;
+    background-repeat:no-repeat;
+    height:600px;
+    width:100%;
+    
+    position:relative;
+    
+}
+
+.joinus button{
+    position:absolute;
+    top:400px;
+    right:210px;
+    padding:10px;
+    
+}
+
+.joinus button a{
+    text-decoration: none;
+}
+
+.joinus button a:hover{
+    font-size:30px;
+    
+}
+
+btn{
+    padding:20px;
+}
+
+.joinus .cover-text2{
+    text-transform: uppercase;
+    font-weight:800px;
+    font-size:xx-large;
+    color:red;
+    position:absolute;
+    top:180px;
+    right:200px;
+    
+}
+/*------- Join section ---------------------*/
+
+/*------- form section ---------------------*/
+#fm-container{
+    width:100%;
+    height:1000px;
+    background-image:url("https://img.freepik.com/free-photo/young-fitness-man-studio_7502-5008.jpg?size=626&ext=jpg&ga=GA1.2.1283280649.1663401745");
+    background-repeat:no-repeat;
+    background-size:cover;
+    overflow:hidden;
+    position:relative;
+
+}
+.frm{
+    position:absolute;
+    width:200px;
+    left:100px;
+    top:100px;
+}
+
+.contac{
+    position:absolute;
+    width:300px;
+    right:600px;
+    top:100px;
+    background-color:white;
+    border:none;
+    text-align:center;
+    height:100px;
+}
+
+.frm h2{
+    text-transform:uppercase;
+    text-align: center;
+    width:500px;
+}
+
+input{
+    width:500px;
+    height: 100px;
+}
+
+input::placeholder{
+    text-transform: uppercase;
+    text-align:center;
+    color:#777;
+    font-weight:bold;
+}
+textarea::placeholder{
+    text-transform: uppercase;
+    text-align:center;
+    color:#777;
+    font-weight:bold;
+    padding-top:50px;
+    
+}
+
+.frm #textarea{
+    width:500px;
+    height:100px;
+    
+}
+
+.frm h3{
+    text-align: center;
+    text-transform:uppercase;
+    width:500px;
+    color:#777;
+    font-size:16px;
+    padding-bottom: 13px;
+}
+
+/*------- End of form section ---------------------*/
+
+/*------- End of form section ---------------------*/
+#container-gallery{
+    clear:both;
+    column-count:3;
+    column-gap:0;
+    line-height:0px;
+    margin-bottom:10px;
+
+}
+#container-gallery img{
+   width:100%;
+
+}
+
+/*------- End of form section ---------------------*/
+
+/*--- body ------------------------------------ */
+/*--- footer ------------------------------------ */
+#footer{
+    background-color:black;
+    padding:50px;
+    
+}
+
+.footer-container{
+    max-width:1170px;
+    margin:auto;
+    height: auto;
+}
+
+.footer-container div{
+    line-height: 75px;
+}
+.row-footer{
+    display:flex;
+    flex-wrap: wrap;
+}
+.col-footer{
+    width:33%;
+    padding:0 15px;
+}
+.foot-cont1-social{
+    clear:both;
+}
+
+.foot-cont1-social {
+    list-style-type: none;
+    padding-left: 100px;
+}
+.foot-cont1-social li{
+    display: inline-block;
+    
+}
+
+.item-2-center a{
+    list-style-type: none;
+    color:white;
+    text-decoration: none;
+}
+
+.item-2-center a:hover{
+    color:red;
+}
+
+.col-footer-center{
+    padding-left: 100px;
+    line-height: 40px;
+}
+
+.item-3-right{
+    color:white;
+    list-style-type: none;
+}
+.item-3-right li{
+    line-height:30px;
+}
+.best{
+    color:white;
+    clear:both;
+    text-align:center;
+    
+}
+
+.credit{
+    text-align:center;
+    color:white;
+    background-color: black;
+    height: 50px;
+    padding-top: 30px;
+}
+
+
+
+
+/*--- footer ------------------------------------ */
+
+/*--- Mobile Styling ------------------------------------ */
+
+@media screen and (max-width: 400px){
+
+    .row{
+        display:block;
+    }
+    .sec{
+        margin-top: opx;
+    }
+    .column h1 {
+        font-size: 30px;
+        width: 290px;
+        padding-top: 80px
+
+}
+    
+
+.column {
+    height: 150px;
+    clear:both;
+
+}
+div.col2 {
+    clear:both;
+
+} 
+
+.ourclasses {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.column h2 {
+    font-size: 30px;
+    font-weight: 100px;
+    padding-bottom: 5px;
+    padding-left: 100px;
+    width: 200px;
+}
+
+#ourclassessecmobile{
+    margin-top: 1600pxpx;
+
+}
+
+div .col2 p {
+    text-align: justify;
+    padding-left: 40px;
+    padding-right: 10px;
+    width: 300px;
+    font-size:20px;
+}
 
 }
 
 
 
-/*--- body ------------------------------------ */
-/*--- footer ------------------------------------ */
 
 
+    
 
 
-/*--- footer ------------------------------------ */
+/*--- End of Mobile Styling ------------------------------------ */
