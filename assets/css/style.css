@@ -16,59 +16,48 @@
     
 }
 
+.navbar-link{
+    color:white;
+    margin: 20px;
+}
+
+.navbar{
+    margin-bottom:10px;
+}
+
 h2{
     font-family:"oswald", san-serif;;
     color:#777777;
 }
 
-
-#menu {
-    float: right;
-    font-size: 130%;
-    
-    
- }
-
- #menu li{
-    float:left;
-    margin-right:30px;
-    list-style-type:none;
-    
-    
- }
-
- #menu a{
-    text-decoration:none;
-    color:#777;
-    
- }
-
- #menu a:hover{
-    border-bottom: 1px solid #777;
-    font-weight:bold;
- }
-
- #menu li .active{
-    border-bottom: 1px solid #777;
- }
-
- #menu, .logo{
-    line-height:75px;
- }
  
  h2 i{
-    padding-left:20px;
-    padding-right:10px;
+
+    font-size: 50px;
  }
 
- #menu nav{
-    border-top: 1px solid gray
+ .logo-title {
+    font-size: 1.8em;
+    margin: 2px;
  }
+
+ @media(max-width:560px){
+    .logo-title {
+        font-size: 1.3em;
+     }
+
+     h2 i{
+        font-size: 30px;
+     }
+ }
+
 /*--- End of header ------------------------------------ */
 /*--- body ------------------------------------ */
 body{
     font-family:lato;
-    font-size:normal
+    font-size:normal;
+    width:100%;
+    height:100%;
 }
 
 .hero-image{
@@ -79,39 +68,62 @@ body{
     background-size: cover;
     overflow:hidden;
     margin-bottom: 2px;
+    margin-top:-7px;
     
+}
+
+@media(max-width:560px){
+    
+    .hero-image{
+        width:100%;
+        height:200px;
+        background-color:rgba(0,0,0,0.7);
+        background: url("https://cdn.pixabay.com/photo/2017/08/07/14/02/man-2604149_960_720.jpg") center center no-repeat;
+        background-size: cover;
+        overflow:hidden;
+        margin-bottom: 20px;
+    }
+   
 }
 
 /*------------- First Section--------- --*/
 
 .container{
-    width:90vw;
-    height: 85vh;
-    border: 2px solid gray;
+    background-image: url("https://images.pexels.com/photos/1547248/pexels-photo-1547248.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     margin: auto;
+    width: 100%;
     display: flex;
-    
+    background-size: cover; 
+}
+
+.container{
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .item{
-    height: 60vh;
-    width: 40vw;
+    width: 100%;
+    height: auto;
     text-align: center;
-    background-color: beige;
     margin: auto;
-   
+}
+
+.item{
+    margin-right:20px
 }
 
 .item2{
-    object-fit: contain;
+    text-align: center;
+    background-color: rgb(245, 245, 220);
+    margin: auto;
 }
 
 .item-li{
     list-style-type: none;
 }
 .pix{
-    width:100%;
-    height:auto;}
+   padding:10px;
+}
 
 
 h1{
@@ -123,48 +135,74 @@ h1{
 }
 h2{
     font-size:30px;
-    font-weight:100px;
+    font-weight:400px;
     padding-bottom:5px; 
 }
 
-.space{
-    width: 5vw;
-    height: 5vh;
-}
 
 /* -------------First Section ---------*/
 
 .mainclassscontainer{
-    width:90vw;
-    height: 85vh;
-    border: 2px solid gray;
+     width:90%;
     margin: auto;
+    
+}
+
+.mainclassscontainer{
+    margin: auto;
+}
+
+.mainclassscontainer{
+    margin-bottom: 10px;
 }
 
 .ourclassscontainer{
-    width:85vw;
-    height: 75vh;
-    border: 2px solid gray;
+    width:100%;
+    height:600px;
     margin: auto;
     display: flex;
     flex-direction: row;
+    flex:33.3%
 }
 
-.class-item{
-    width: 27vw;
-    height: 70vh;
-    border: 2px solid gray;
-    margin: auto;
-   
+.ourclassscontainer img{
+    width: 33.3%;
+    object-fit: cover;
 }
+
 
 img{
-   width: 27vw;
-   height: 70vh;
-   object-fit:cover;
+   width: 100%;
+   height: auto;
+   object-fit:contain;
 }
 .class-text{
     text-align: center;
+}
+
+@media (max-width:560px){
+
+    .mainclassscontainer{
+        width:96%;
+       border: 2px solid gray;
+       margin: auto;
+       
+   }
+
+   .ourclassscontainer{
+    width:100%;
+    height:500px;
+    border: 2px solid gray;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.ourclassscontainer img{
+    width: auto;
+}
+
 }
 
 
@@ -173,9 +211,7 @@ img{
 /*------- Table ---------------------*/
 
 .tabsec{
-    width:90vw;
-    height: 105vh;
-    border: 2px solid gray;
+    width: 96%;
     text-align:center;
     margin: auto;
     object-fit: contain;
@@ -183,6 +219,7 @@ img{
 
 .tabsec{
     margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 
@@ -214,13 +251,7 @@ img{
     color:white;
  }
 
- table {
-   width:55vw;
-   height: 60vh;  
-   text-align:center;
-   object-fit: cover;
-  
-}
+
 .tabsec table{
    margin-right:auto;
    margin-left:auto;
@@ -279,45 +310,6 @@ tr{
 
 /*------- End of Table ---------------------*/
 
-/*------- trainers ---------------------*/
-
-.mainclassscontainer{
-    width:90vw;
-    height: 85vh;
-    border: 2px solid gray;
-    margin: auto;
-}
-
-.span-class{
-    text-align: center;
-}
-
-.trainer-container{
-    width:86vw;
-    height: 70vh;
-    border: 2px solid gray;
-    margin: auto;
-    display: flex;
-}
-
-.trainer-container-item{
-    width:25vw;
-    height: 65vh;
-    border: 2px solid gray;
-    margin: auto;
-    object-fit: cover;
-    
-}
-
-.trainer-image{
-    width:20vw;
-    height: 55vh;
-    margin: auto;
-    
-}
-
-
-/*------- End of Trainers ---------------------*/
 
 /*------- Join section---------------------*/
 #join{
@@ -372,6 +364,7 @@ btn{
 
 /*------- form section ---------------------*/
 #fm-container{
+    margin-top:-9.5px;
     width:100%;
     height:1000px;
     background-image:url("https://img.freepik.com/free-photo/young-fitness-man-studio_7502-5008.jpg?size=626&ext=jpg&ga=GA1.2.1283280649.1663401745");
@@ -383,10 +376,20 @@ btn{
 }
 .frm{
     position:absolute;
-    width:200px;
+    width:510px;
     left:100px;
     top:100px;
 }
+
+.frm div{
+    width: 509px;
+
+}
+
+.submit-button{
+    padding-left:2px;
+}
+
 
 .contac{
     position:absolute;
@@ -428,6 +431,7 @@ textarea::placeholder{
 .frm #textarea{
     width:500px;
     height:100px;
+    padding-bottom: 100px;
     
 }
 
@@ -440,6 +444,9 @@ textarea::placeholder{
     padding-bottom: 13px;
 }
 
+
+
+
 /*------- End of form section ---------------------*/
 
 /*------- End of form section ---------------------*/
@@ -448,7 +455,8 @@ textarea::placeholder{
     column-count:3;
     column-gap:0;
     line-height:0px;
-    margin-bottom:10px;
+    margin-bottom:-15px;
+    margin-top: -7px;
 
 }
 #container-gallery img{
@@ -460,6 +468,23 @@ textarea::placeholder{
 
 /*--- body ------------------------------------ */
 /*--- footer ------------------------------------ */
+.col-md-4{
+    text-align: center;
+}
+
+.col-md-4 p{
+    line-height: 25px;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.col-md-4 ul{
+    line-height: 25px;
+    font-size: 15px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
 #footer{
     background-color:black;
     padding:50px;
@@ -530,7 +555,7 @@ textarea::placeholder{
     color:white;
     background-color: black;
     height: 50px;
-    padding-top: 30px;
+    padding-top: 10px;
 }
 
 
@@ -598,12 +623,130 @@ footer {
 
 /*--- Mobile Styling ------------------------------------ */
 
-@media screen and (max-width: 800px){
+@media(max-width: 600px){
 
-   
+    .text-align{
+       padding-left: 11px;
+       margin-bottom: 20px;
+    }
+   input {
+       width: 50%;
+       height: 50px;
+
+   }
+
+   .center-div{
+       width: 509px;
+   display: flex;
+   justify-content: center
+   }
+
+   .frm #textarea{
+       width:50%;
+       height:50px;
+}
+.frm h3{
+   text-align: center;
+   text-transform:uppercase;
+   width:480px;
+   color:#777;
+   padding-bottom: 13px;
+   margin: auto;
+}
+
+#fm-container {
+   width: 100%;
+   height: 600px;
+   background-image: url(https://img.freepik.com/free-photo/young-fitness-man-studio_7502-5008.jpg?size=626&ext=jpg&ga=GA1.2.1283280649.1663401745);
+   background-repeat: no-repeat;
+   background-size: cover;
+   overflow: hidden;
+   position: relative;
+
+
+}
+
+.frm {
+   position: absolute;
+   width: 100%;
+   top: 100px;
+   margin: auto;
+   left: -0px;
+   padding-left: 5px;
+   display: flex;
+   flex-direction: column;
+   justify-items: center;
+   align-items: center;
+}
+
+.frm{
+   margin-bottom: 20px;
+}
+
+.submit-button{
+   padding-left:0px;
+}
+
+.frm h2 {
+   text-transform: uppercase;
+   text-align: center;
+   width: 180px;
+   padding-left: 11px;
+   margin: auto;
 }
 
 
+}
+
+@media(max-width: 406px){
+   .frm {
+       position: absolute;
+       width: 100%;
+       top: 100px;
+       margin: auto;
+       left: 0px;
+       padding-left: 5px;
+       display: flex;
+       flex-direction: column;
+       justify-items: center;
+       align-items: center;
+   }
+
+}
+
+
+@media(max-width:560px){
+    .item{
+        display:none
+    }
+
+    .container{
+        margin: auto;
+        display: flex;
+        flex-direction: column; 
+}
+
+.container{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+h1{
+    font-size:20px;
+    font-weight:100px;
+    padding-bottom:3px;
+    
+
+}
+h2{
+    font-size:30px;
+    font-weight:100px;
+    padding-bottom:5px; 
+}
+
+
+
+}
 
 
 
